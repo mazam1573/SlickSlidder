@@ -1,0 +1,132 @@
+html,
+body {
+    background: #102131;
+    font: 16px/22px Museo Sans,
+        Arial,
+        Helvetica,
+        Verdana,
+        sans-serif;
+}
+
+.blog {
+    width: 100%;
+    height: 90vh;
+    background: #C5ECF4;
+    padding: 5em 0;
+}
+
+.blog h2,
+.blog p {
+    width: 70%;
+    margin: auto;
+}
+
+.blog h2 {
+    font-weight: bold;
+    margin-bottom: .4em;
+    color: #000000;
+    text-align: left;
+    line-height: 2em;
+    font-size: 2.5rem;
+}
+
+.slider {
+    width: 100%;
+    height: 60vh;
+    margin: 20px auto;
+    text-align: center;
+    color: white;
+}
+
+.slick-list {
+    padding: unset !important;
+}
+
+.slider .slide {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    width: 426px !important;
+    margin: 0 5px;
+}
+
+.slider .parent-slide {
+    padding: 15px;
+}
+
+.slider img {
+    display: block;
+    margin: auto;
+}
+
+.slick-prev {
+    left: 25px;
+}
+
+.slick-next {
+    right: 25px;
+}
+
+.slick-prev,
+.slick-next {
+    top: 44%;
+}
+
+.slick-prev::before,
+.slick-next::before {
+    font-size: 35px;
+    opacity: .7;
+    color: #fff;
+    transition: width 0.2s, height 0.2s, margin-top 0.2s;
+    transform: translate(0);
+}
+
+.slick-prev::before:hover,
+.slick-next::before:hover {
+    opacity: 1;
+}
+
+.slide div {
+    position: relative;
+}
+
+.slide div i {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 24px;
+    color: #EDEFE4;
+}
+
+@media (max-width: 1024px) {
+    .slider {
+        height: 80vh;
+    }
+
+    .blog h2 {
+        line-height: 1.2em;
+    }
+
+    .blog h2,
+    .blog p {
+        width: 80%;
+        margin: auto;
+    }
+
+    .slick-prev,
+    .slick-next {
+        top: 32%;
+    }
+}
+
+@media (max-width: 760px) {
+
+    .blog h2,
+    .blog p {
+        width: 90%;
+        margin: auto;
+    }
+
+
+}

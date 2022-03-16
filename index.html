@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slick Blog</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+        integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="blog">
+        <h2>Sparking moments of wonder and discovery</h2>
+        <p>Check out #KiwiCo for tons more amazing creativity and serious fun.</p>
+        <div class="slider">
+            <div class="slide">
+                <div>
+                    <img src="img/img-1.jpg" alt="" class="img-responsive" />
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+                <div>
+                    <img src="img/img-2.jpg" alt="" class="img-responsive" />
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <div>
+                    <img src="img/img-3.jpg" alt="" class="img-responsive" />
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div>
+                    <img src="img/img-4.jpg" alt="" class="img-responsive" />
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <div class="slide">
+                <div>
+                    <img src="img/img-1.jpg" alt="" class="img-responsive" />
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+                <div>
+                    <img src="img/img-2.jpg" alt="" class="img-responsive" />
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <div>
+                    <img src="img/img-3.jpg" alt="" class="img-responsive" />
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div>
+                    <img src="img/img-4.jpg" alt="" class="img-responsive" />
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <div class="slide">
+                <div>
+                    <img src="img/img-1.jpg" alt="" class="img-responsive" />
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+                <div>
+                    <img src="img/img-2.jpg" alt="" class="img-responsive" />
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <div>
+                    <img src="img/img-3.jpg" alt="" class="img-responsive" />
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div>
+                    <img src="img/img-4.jpg" alt="" class="img-responsive" />
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <div class="slide">
+                <div>
+                    <img src="img/img-1.jpg" alt="" class="img-responsive" />
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+                <div>
+                    <img src="img/img-2.jpg" alt="" class="img-responsive" />
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <div>
+                    <img src="img/img-3.jpg" alt="" class="img-responsive" />
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div>
+                    <img src="img/img-4.jpg" alt="" class="img-responsive" />
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
+    <script>
+        window.onload = function () {
+            $('.slider').slick({
+                autoplay: true,
+                autoplaySpeed: 3000,
+                arrows: true,
+                prevArrow: '<button type="button" class="slick-prev"></button>',
+                nextArrow: '<button type="button" class="slick-next"></button>',
+                centerMode: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                responsive: [{
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 760,
+                        settings: {
+                            slidesToShow: 1,
+                        }
+                    }
+                ]
+            });
+        };
+    </script>
+</body>
+
+</html>
